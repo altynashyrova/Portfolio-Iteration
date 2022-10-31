@@ -1,8 +1,11 @@
 
 header {
+    box-sizing: border-box;
     width: 1440px;
-    height: 60px;
+    height: 80px;
     background-color: rgba(242, 238, 232, 100%);
+    padding-top: 15px;
+    padding-right: 40px;
     }
     
 .inline_block {
@@ -13,11 +16,16 @@ header {
 
 .logo {
         float: left;
-        margin-left: 20px;
+        margin-left: 30px;
         font-family: 'EB Garamond'; 
         font-size: 16px;
+        margin-top: 10px;
     }
-    
+ 
+.menuItems {
+    margin-top: 0px;
+}
+
 li {
         display: inline-block;
         padding: 0 10px 0 10px; 
@@ -26,6 +34,17 @@ li {
     
 button {
     display: inline-block;
+    box-sizing: border-box;
+    background-color: rgba(242, 238, 232, 100%);
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 20px;
+    border-width: 1px;
+
 }    
 
 section {
@@ -39,12 +58,13 @@ aside {
             background-color: rgba(242, 238, 232, 100%);
             float: left;
         }
-    
+
 .profile_pic {
             width: 700px;
             height: 950px;
             background-color: rgba(73, 63, 48, 100%);
             float: right;
+            margin: 0px;
          }    
 
 .text_container {
@@ -53,7 +73,15 @@ aside {
 }
 
 .center {
+    box-sizing: border-box;
+    width: 1440px;
+    padding: 0px 0px 20px 0px;
     text-align: center;
+    background-color: rgba(242, 238, 232, 100%);
+}
+
+#phoneNumber {
+    margin: 0px 0px 0px 0px;
 }
 
 .AboutMe {
@@ -99,4 +127,222 @@ aside {
     font-family: 'Ephesis';
     font-size: 60px;
     color: rgba(73, 63, 48, 50%);
+}
+
+#caseStudies {
+    height: 60px;
+    margin: 0px 0px 0px 0px;
+    padding-top: 60px;
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.case_studies {
+    margin: 0px 0px 0px 0px;
+    height: 1350px;
+    background-color: rgba(242, 238, 232, 100%);
+}
+
+.grid_container {
+    display: grid;
+    height: 1200px;
+    text-align: center;
+    margin: 0px 20px 20px 20px; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+                         "topLeft topRight"
+                         "lowerLeft lowerRight";
+                         
+}
+
+.topLeft {
+    box-sizing: border-box;
+    grid-area: "topLeft"; 
+    width: 700px;
+}
+
+.top_right {
+    box-sizing: border-box;
+    grid-area: "topRight";
+    width: 700px;
+}
+
+.lower_left {
+    grid-area: "lowerLeft";
+    box-sizing: border-box;
+    width: 700px;
+}
+
+.lower_right {
+   grid-area: "lowerRight";
+   box-sizing: border-box;
+   width: 700px;
+}
+
+img {
+    width: 650px;
+}
+
+.project_type {
+    font-family: 'Source Sans Pro';
+    font-size: 10px;
+    color: #696969;
+    margin-top: 16px;
+    margin-bottom: 10px;
+
+}
+
+.project_title {
+    font-family: 'EB Garamond';
+    font-size: 20px; 
+    margin-top: 10px;
+
+}
+
+.description {
+    max-width: 400px;
+    margin-left: 170px;
+    text-align: center;
+}
+
+.view_cs {
+    text-align: center; 
+    text-decoration: underline;
+    font-family: 'EB Garamond';
+    font-size: 14px; 
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        box-sizing: border-box;
+        width: 600px;
+        height: 80px;
+        background-color: rgba(242, 238, 232, 100%);
+        padding-top: 15px;
+        padding-right: 70px;
+        }
+    .JobTitle {
+       margin-left: 50px;
+        }
+    .text_container {
+        margin-left: 50px;
+    }
+    .AboutMe {
+        margin-left: 50px;
+    } 
+    .Quote {
+        margin-left: 50px;
+    }
+    .BracketUpper {
+        margin-left: -180px;
+    }
+    .BracketLower {
+        margin-left: -180px;
+    }
+
+    #caseStudies {
+        max-width: 600px;
+    }
+    
+    .case_studies {
+        height: 2200px;
+    }
+
+    .grid_container {
+        max-width: 600px;
+        display: grid;
+        height: 1800px;
+        text-align: center;
+        margin: 20px 20px 20px 20px; 
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px;
+        grid-template-areas: 
+                             "topLeft" 
+                             "topRight"
+                             "lowerLeft" 
+                             "lowerRight";
+                             
+    }
+    
+    .topLeft {
+        box-sizing: border-box;
+        grid-area: "topLeft"; 
+        width: 600px;
+        align-self: center;
+        padding-left: 20px;
+        padding-left: 0px;
+        padding-right: 20px;
+    }
+    
+    .top_right {
+        box-sizing: border-box;
+        grid-area: "topRight";
+        width: 600px;
+        align-self: center;
+        padding-left: 20px;
+    }
+    
+    .lower_left {
+        grid-area: "lowerLeft";
+        box-sizing: border-box;
+        width: 600px;
+        align-self: center;
+        padding-left: 20px;
+    }
+    
+    .lower_right {
+       grid-area: "lowerRight";
+       box-sizing: border-box;
+       width: 600px;
+       align-self: center;
+       padding-left: 20px;
+    }
+    
+    img {
+        width: 500px;
+    }
+    
+    .project_type {
+        font-family: 'Source Sans Pro';
+        font-size: 10px;
+        color: #696969;
+        margin-top: 16px;
+        margin-bottom: 10px;
+        text-align: center;
+    
+    }
+    
+    .project_title {
+        font-family: 'EB Garamond';
+        font-size: 20px; 
+        margin-top: 10px;
+        text-align: center;
+    
+    }
+    
+    .description {
+        max-width: 400px;
+        margin-left: 70px;
+        text-align: center;
+    }
+    
+    .view_cs {
+        text-align: center; 
+        text-decoration: underline;
+        font-family: 'EB Garamond';
+        font-size: 14px; 
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .center {
+        box-sizing: border-box;
+        max-width: 600px;
+        padding: 0px 0px 20px 0px;
+        text-align: center;
+        background-color: rgba(242, 238, 232, 100%);
+    }
+    
 }
